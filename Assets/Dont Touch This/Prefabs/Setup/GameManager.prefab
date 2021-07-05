@@ -252,6 +252,24 @@ MonoBehaviour:
   raceCountdownTrigger: {fileID: 6934670203731004115}
   loseSceneName: LoseScene
   loseDisplayMessage: {fileID: 134547017375206124}
+  loadScenesAtStart: 0
+  scenesToLoadAtStart:
+  - LinksScene
+  - GameplayAlexandreDemey
+  - GameplayBlondiauNicolas
+  - GameplayBourbonHugo
+  - GameplayBruyPaul
+  - GameplayDiSciaccaJason
+  - GamePlayElsenXavier
+  - GameplayHaotCorentin
+  - GameplayLionelKakani
+  - GameplayLouiseJungers
+  - GameplayMartinoAntonio
+  - GameplayMathieuLoiseau
+  - GamePlayQuentinOlivier
+  - GameplayRiveraFernandezEgon
+  - DecorScene
+  gameIsReady: 0
   autoFindKarts: 1
   playerKart: {fileID: 0}
   finalTime: {fileID: 11400000, guid: ae675e31837e3ff40aee1f20e8a52953, type: 2}
