@@ -345,9 +345,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenesName:
-  - MainScene
+  - GameplayAlexandreDemey
+  - GameplayBlondiauNicolas
+  - GameplayBourbonHugo
+  - GameplayBruyPaul
+  - GameplayDiSciaccaJason
+  - GamePlayElsenXavier
+  - GameplayHaotCorentin
+  - GameplayLionelKakani
+  - GameplayLouiseJungers
+  - GameplayMartinoAntonio
+  - GameplayMathieuLoiseau
+  - GamePlayQuentinOlivier
+  - GameplayRiveraFernandezEgon
   - DecorScene
-  - BaseScene
+  - LinksScene
+  - MainScene
 --- !u!1 &134625305
 GameObject:
   m_ObjectHideFlags: 0

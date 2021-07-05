@@ -23,7 +23,7 @@ namespace KartGame.UI
         {
             AsyncOperation asyncLoadLevel;
 
-            for (int i = 0 ; i < scenesName.Count; i++)
+            for (int i = 0; i < scenesName.Count; i++)
             {
                 asyncLoadLevel = SceneManager.LoadSceneAsync(scenesName[i], LoadSceneMode.Additive);
                 while (!asyncLoadLevel.isDone)

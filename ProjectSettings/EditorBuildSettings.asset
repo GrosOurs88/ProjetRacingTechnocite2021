@@ -17,4 +17,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Dont Touch This/Scenes/DecorScene.unity
     guid: ac7652b2c5cefea4ebabeab4891af328
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayAlexandreDemey.unity
+    guid: 59b86d60c0917c34d8fbb8b3d0bff2e9
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayBlondiauNicolas.unity
+    guid: c9aa34f65e2559b49af9e06c635af67c
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayBourbonHugo.unity
+    guid: 3f218c04ae278d84b928f7662245664e
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayBruyPaul.unity
+    guid: 03d48d7842654184f9a312aecc225323
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayDiSciaccaJason.unity
+    guid: c7e0cbad0e977b2409db4dc9d9e1f9fc
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GamePlayElsenXavier.unity
+    guid: fabc82b70d2659b4a98f5b422bb4b576
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayHaotCorentin.unity
+    guid: 68b15e482bd258b4e93d0154cc32b01a
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayLionelKakani.unity
+    guid: 528c9f97f2f21034bb0228cf743281cb
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayLouiseJungers.unity
+    guid: 7426e29c519478d4daa71afa92d95671
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayMartinoAntonio.unity
+    guid: dbd2cc6506186af49954e94ad1c20083
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayMathieuLoiseau.unity
+    guid: 0d735842a50165f45bd5deea3595a738
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GamePlayQuentinOlivier.unity
+    guid: 40684c01d56f3c8488ddf7c85ea46cdc
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/GameplayRiveraFernandezEgon.unity
+    guid: 6c407f66953f13b498ebdd7ff1c218f1
+  - enabled: 1
+    path: Assets/Students Folder/Scenes/LinksScene.unity
+    guid: c12f83ffa9c005244b431c78efdc1bfa
   m_configObjects: {}
