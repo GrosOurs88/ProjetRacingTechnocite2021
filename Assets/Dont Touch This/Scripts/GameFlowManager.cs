@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using KartGame.KartSystems;
@@ -35,6 +36,12 @@ public class GameFlowManager : MonoBehaviour
     [Tooltip("Prefab for the lose game message")]
     public DisplayMessage loseDisplayMessage;
 
+    //***SCENES TO LOAD
+    public bool loadScenesAtStart = false;
+    public List<string> scenesToLoadAtStart = new List<string>();
+    public bool gameIsReady = false;
+    [HideInInspector]
+    public static bool isARetry = false;
 
     public GameState gameState { get; private set; }
 
@@ -50,6 +57,24 @@ public class GameFlowManager : MonoBehaviour
 
     public TimeInfos finalTime;
 
+    public static GameFlowManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+
+        if(loadScenesAtStart && !isARetry)
+        {
+            StartCoroutine(LoadLevel());
+        }       
+        else
+        {
+            return;
+        }
+
+        isARetry = true;
+    }
+
     void Start()
     {
         if (autoFindKarts)
@@ -63,7 +88,7 @@ public class GameFlowManager : MonoBehaviour
         }
 
         m_ObjectiveManager = FindObjectOfType<ObjectiveManager>();
-		DebugUtility.HandleErrorIfNullFindObject<ObjectiveManager, GameFlowManager>(m_ObjectiveManager, this);
+        DebugUtility.HandleErrorIfNullFindObject<ObjectiveManager, GameFlowManager>(m_ObjectiveManager, this);
 
         m_TimeManager = FindObjectOfType<TimeManager>();
         DebugUtility.HandleErrorIfNullFindObject<TimeManager, GameFlowManager>(m_TimeManager, this);
@@ -76,7 +101,7 @@ public class GameFlowManager : MonoBehaviour
         m_TimeManager.StopRace();
         foreach (ArcadeKart k in karts)
         {
-			k.SetCanMove(false);
+            k.SetCanMove(false);
         }
 
         //run race countdown animation
@@ -92,7 +117,8 @@ public class GameFlowManager : MonoBehaviour
         StartRace();
     }
 
-    void StartRace() {
+    void StartRace() 
+    {
         foreach (ArcadeKart k in karts)
         {
 			k.SetCanMove(true);
@@ -117,39 +143,57 @@ public class GameFlowManager : MonoBehaviour
         }
     }
 
+    IEnumerator LoadLevel()
+    {
+        AsyncOperation asyncLoadLevel;
+
+        for (int i = 0; i < scenesToLoadAtStart.Count; i++)
+        {
+            asyncLoadLevel = SceneManager.LoadSceneAsync(scenesToLoadAtStart[i], LoadSceneMode.Additive);
+            while (!asyncLoadLevel.isDone)
+            {
+                yield return null;
+            }
+        }
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainScene"));
+   //     gameIsReady = true;
+    }
 
     void Update()
     {
-
-        if (gameState != GameState.Play)
-        {
-            elapsedTimeBeforeEndScene += Time.deltaTime;
-            if(elapsedTimeBeforeEndScene >= endSceneLoadDelay)
+     //   if (gameIsReady)
+     //   {
+            if (gameState != GameState.Play)
             {
-
-                float timeRatio = 1 - (m_TimeLoadEndGameScene - Time.time) / endSceneLoadDelay;
-                endGameFadeCanvasGroup.alpha = timeRatio;
-
-                float volumeRatio = Mathf.Abs(timeRatio);
-                float volume = Mathf.Clamp(1 - volumeRatio, 0, 1);
-                AudioUtility.SetMasterVolume(volume);
-
-                // See if it's time to load the end scene (after the delay)
-                if (Time.time >= m_TimeLoadEndGameScene)
+                elapsedTimeBeforeEndScene += Time.deltaTime;
+                if (elapsedTimeBeforeEndScene >= endSceneLoadDelay)
                 {
-                    SceneManager.LoadScene(m_SceneToLoad);
-                    gameState = GameState.Play;
+
+                    float timeRatio = 1 - (m_TimeLoadEndGameScene - Time.time) / endSceneLoadDelay;
+                    endGameFadeCanvasGroup.alpha = timeRatio;
+
+                    float volumeRatio = Mathf.Abs(timeRatio);
+                    float volume = Mathf.Clamp(1 - volumeRatio, 0, 1);
+                    AudioUtility.SetMasterVolume(volume);
+
+                    // See if it's time to load the end scene (after the delay)
+                    if (Time.time >= m_TimeLoadEndGameScene)
+                    {
+                        SceneManager.LoadScene(m_SceneToLoad);
+                        gameState = GameState.Play;
+                    }
                 }
             }
-        }
-        else
-        {
-            if (m_ObjectiveManager.AreAllObjectivesCompleted())
-                EndGame(true);
+            else
+            {
+                if (m_ObjectiveManager.AreAllObjectivesCompleted())
+                    EndGame(true);
 
-            if (m_TimeManager.IsFinite && m_TimeManager.IsOver)
-                EndGame(false);
-        }
+                if (m_TimeManager.IsFinite && m_TimeManager.IsOver)
+                    EndGame(false);
+            }
+      //  }
     }
 
     void EndGame(bool win)
