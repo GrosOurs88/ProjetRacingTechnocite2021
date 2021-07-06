@@ -1822,7 +1822,7 @@ GameObject:
   - component: {fileID: 1579282987820502318}
   - component: {fileID: 1579282987816156492}
   m_Layer: 11
-  m_Name: ModularTrackStraight 1
+  m_Name: NewModularTrack05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
