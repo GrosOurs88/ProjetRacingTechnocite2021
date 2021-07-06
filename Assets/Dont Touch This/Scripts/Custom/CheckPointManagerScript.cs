@@ -46,12 +46,19 @@ public class CheckPointManagerScript : MonoBehaviour
     public void SwitchToCameraFPS(GameObject _avatar)
     {
         cameraManagerScript = CameraManagerScript.instance;
-        cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1;
+        cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1.5f;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = 0;
         
         if(_avatar.GetComponent<CustomVariableScript>())
         {
-            _avatar.GetComponent<CustomVariableScript>().TemplateCharacter.SetActive(false);
+            foreach (GameObject gO in _avatar.GetComponent<CustomVariableScript>().avatarAndKart)
+            {
+                gO.SetActive(false);
+            }
+            foreach (GameObject gO in _avatar.GetComponent<CustomVariableScript>().kartWheels)
+            {
+                gO.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
         else
         {
@@ -67,7 +74,14 @@ public class CheckPointManagerScript : MonoBehaviour
 
         if (_avatar.GetComponent<CustomVariableScript>())
         {
-            _avatar.GetComponent<CustomVariableScript>().TemplateCharacter.SetActive(true);
+            foreach (GameObject gO in _avatar.GetComponent<CustomVariableScript>().avatarAndKart)
+            {
+                gO.SetActive(true);
+            }
+            foreach (GameObject gO in _avatar.GetComponent<CustomVariableScript>().kartWheels)
+            {
+                gO.GetComponent<MeshRenderer>().enabled = true;
+            }
         }
         else
         {

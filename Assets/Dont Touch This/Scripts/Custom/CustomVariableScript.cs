@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class CustomVariableScript : MonoBehaviour
 {
-    public GameObject TemplateCharacter;  
+    public List<GameObject> avatarAndKart = new List<GameObject>();
+    public List<GameObject> kartWheels = new List<GameObject>();
 }
