@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7609577426195730089}
   - component: {fileID: 7609577426194730089}
   - component: {fileID: 7609577426198838281}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: ModularTrackSpiralRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 7609577426192830091}
   - component: {fileID: 7609577426195730091}
   - component: {fileID: 7609577426194730091}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: LaneDivider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
