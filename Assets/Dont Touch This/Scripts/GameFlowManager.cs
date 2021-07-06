@@ -36,13 +36,7 @@ public class GameFlowManager : MonoBehaviour
     [Tooltip("Prefab for the lose game message")]
     public DisplayMessage loseDisplayMessage;
 
-    //***SCENES TO LOAD
-    public bool loadScenesAtStart = false;
-    public List<string> scenesToLoadAtStart = new List<string>();
-    public bool gameIsReady = false;
     [HideInInspector]
-    public static bool isARetry = false;
-
     public GameState gameState { get; private set; }
 
     public bool autoFindKarts = true;
@@ -62,17 +56,6 @@ public class GameFlowManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-
-        if(loadScenesAtStart && !isARetry)
-        {
-            StartCoroutine(LoadLevel());
-        }       
-        else
-        {
-            return;
-        }
-
-        isARetry = true;
     }
 
     void Start()
@@ -141,23 +124,6 @@ public class GameFlowManager : MonoBehaviour
            if (m_ObjectiveManager.Objectives[i].displayMessage)m_ObjectiveManager.Objectives[i].displayMessage.Display();
            yield return new WaitForSecondsRealtime(1f);
         }
-    }
-
-    IEnumerator LoadLevel()
-    {
-        AsyncOperation asyncLoadLevel;
-
-        for (int i = 0; i < scenesToLoadAtStart.Count; i++)
-        {
-            asyncLoadLevel = SceneManager.LoadSceneAsync(scenesToLoadAtStart[i], LoadSceneMode.Additive);
-            while (!asyncLoadLevel.isDone)
-            {
-                yield return null;
-            }
-        }
-
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("MainScene"));
-   //     gameIsReady = true;
     }
 
     void Update()
