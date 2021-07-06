@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 95, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.179, y: 43.171}
+  m_AnchoredPosition: {x: 25.179, y: 44.671}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1955253501094037436
@@ -204,7 +204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 110, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.271, y: 43.171}
+  m_AnchoredPosition: {x: 25.271, y: 44.671}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1432872989881692869
@@ -268,9 +268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bienvenue
-
-    dans le biome GLACE'
+  m_text: Bienvenue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -637,7 +635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 468294, guid: 43b2b404294e101458d5ac111a2795f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.164
+      value: 44.664
       objectReference: {fileID: 0}
     - target: {fileID: 468294, guid: 43b2b404294e101458d5ac111a2795f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1219,7 +1217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438534, guid: c4f65cc2474b3f1438e9c9389c03822b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.851597
+      value: 43.351597
       objectReference: {fileID: 0}
     - target: {fileID: 438534, guid: c4f65cc2474b3f1438e9c9389c03822b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1665,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 468294, guid: 43b2b404294e101458d5ac111a2795f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.164
+      value: 44.664
       objectReference: {fileID: 0}
     - target: {fileID: 468294, guid: 43b2b404294e101458d5ac111a2795f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2111,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 490310, guid: 5e2584a852ef63142b40e217afbf01bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.771
+      value: 43.271
       objectReference: {fileID: 0}
     - target: {fileID: 490310, guid: 5e2584a852ef63142b40e217afbf01bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2743,7 +2741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445824, guid: 09e5cbb444a0b814da9de2cbcb6628cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 39.52
+      value: 41.02
       objectReference: {fileID: 0}
     - target: {fileID: 445824, guid: 09e5cbb444a0b814da9de2cbcb6628cc, type: 3}
       propertyPath: m_LocalPosition.z
