@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckPointScript : MonoBehaviour
+public class ChangeCameraScript : MonoBehaviour
 {
     public enum CameraType { TPS, FPS };
     
