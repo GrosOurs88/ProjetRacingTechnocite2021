@@ -16,8 +16,8 @@ namespace KartGame.KartSystems
             public float MaxTime;
         }
 
-        [Header("Controls Mode")]
-        public bool useController;
+      //  [Header("Controls Mode")]
+    //    public bool useController;
 
         [System.Serializable]
         public struct Stats
@@ -110,6 +110,8 @@ namespace KartGame.KartSystems
         public float DriftAdditionalSteer = 5.0f;
         [Range(1.0f, 30.0f), Tooltip("The higher the angle, the easier it is to regain full grip.")]
         public float MinAngleToFinishDrift = 10.0f;
+        [Range(0.01f, 0.99f), Tooltip("Mininum speed percentage to switch back to full grip.")]
+        public float MinSpeedPercentToStartDrift = 0.5f;
         [Range(0.01f, 0.99f), Tooltip("Mininum speed percentage to switch back to full grip.")]
         public float MinSpeedPercentToFinishDrift = 0.5f;
         [Range(1.0f, 20.0f), Tooltip("The higher the value, the easier it is to control the drift steering.")]
@@ -315,15 +317,18 @@ namespace KartGame.KartSystems
             // apply vehicle physics
             if (m_CanMove)
             {
-                if(!useController)
-                {
-                    MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
-                }
+                MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
+                MoveVehicleController(Input.AccelerateController, Input.BrakeController, Input.TurnInput);
 
-                else if(useController)
-                {
-                    MoveVehicleController(Input.AccelerateController, Input.BrakeController, Input.TurnInput);
-                }
+                //if (!useController)
+                //{
+                //    MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
+                //}
+
+                //else if(useController)
+                //{
+                //    MoveVehicleController(Input.AccelerateController, Input.BrakeController, Input.TurnInput);
+                //}
             }
             GroundAirbourne();
 
@@ -527,7 +532,7 @@ namespace KartGame.KartSystems
                 // Drift Management
                 if (!IsDrifting)
                 {
-                    if ((WantsToDrift || isBraking) && currentSpeed > maxSpeed * MinSpeedPercentToFinishDrift)
+                    if ((WantsToDrift || isBraking) && currentSpeed > maxSpeed * MinSpeedPercentToStartDrift)
                     {
                         IsDrifting = true;
                         m_DriftTurningPower = turningPower + (Mathf.Sign(turningPower) * DriftAdditionalSteer);
@@ -711,7 +716,7 @@ namespace KartGame.KartSystems
                 // Drift Management
                 if (!IsDrifting)
                 {
-                    if ((WantsToDrift || isBraking) && currentSpeed > maxSpeed * MinSpeedPercentToFinishDrift)
+                    if ((WantsToDrift || isBraking) && currentSpeed > maxSpeed * MinSpeedPercentToStartDrift)
                     {
                         IsDrifting = true;
                         m_DriftTurningPower = turningPower + (Mathf.Sign(turningPower) * DriftAdditionalSteer);
@@ -747,7 +752,6 @@ namespace KartGame.KartSystems
                         IsDrifting = false;
                         m_CurrentGrip = m_FinalStats.Grip;
                     }
-
                 }
 
                 // rotate our velocity based on current steer value

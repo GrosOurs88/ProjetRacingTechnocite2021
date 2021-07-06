@@ -48,17 +48,14 @@ public class CheckPointManagerScript : MonoBehaviour
         cameraManagerScript = CameraManagerScript.instance;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = 0;
-
-
+        
         if(_avatar.GetComponent<CustomVariableScript>())
         {
-            print("OH YEAH !");
             _avatar.GetComponent<CustomVariableScript>().TemplateCharacter.SetActive(false);
         }
-
         else
         {
-            print("OH NOOOOOOOOOOOOOON !");
+            Debug.LogError("No TemplateCharacter detected on the avatar prefab !");
         }
     }
 
@@ -70,13 +67,11 @@ public class CheckPointManagerScript : MonoBehaviour
 
         if (_avatar.GetComponent<CustomVariableScript>())
         {
-            print("OH YEAH !");
             _avatar.GetComponent<CustomVariableScript>().TemplateCharacter.SetActive(true);
         }
-
         else
         {
-            print("OH NOOOOOOOOOOOOOON !");
+            Debug.LogError("No TemplateCharacter detected on the avatar prefab !");
         }
     }
 }

@@ -244,7 +244,8 @@ MonoBehaviour:
   DriftGrip: 0.6
   DriftAdditionalSteer: 1.5
   MinAngleToFinishDrift: 10
-  MinSpeedPercentToFinishDrift: 0.8
+  MinSpeedPercentToStartDrift: 0.1
+  MinSpeedPercentToFinishDrift: 0.9
   DriftControl: 15
   DriftDampening: 8
   DriftSparkVFX: {fileID: 5720418349283321134, guid: 83d0ce15c25af954bbd1425a9ddf8458, type: 3}
