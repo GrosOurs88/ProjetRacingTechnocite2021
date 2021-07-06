@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6602977218683986145}
   - component: {fileID: 6602977218682659009}
   - component: {fileID: 6602977218681561601}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: LaneDivider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6602977218682659017}
   - component: {fileID: 6602977218681561609}
   - component: {fileID: 6602977218685588075}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: ModularTrackCurveLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
