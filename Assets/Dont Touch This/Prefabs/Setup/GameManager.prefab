@@ -188,6 +188,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6611290461825244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836520582886223241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33249f47d511ca64cab4d2c2e54807bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastCheckPointPos: {x: 0, y: 0, z: 0}
+  lastCheckPointQuat: {x: 0, y: 0, z: 0, w: 0}
+  KartClassicPlayer: {fileID: 0}
+  teleportToLastCheckpoint: Teleport
 --- !u!1 &1315839542190839943
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +219,8 @@ GameObject:
   - component: {fileID: 3238384850254843951}
   - component: {fileID: 5198000027228784544}
   - component: {fileID: 684622227}
+  - component: {fileID: 8048913869959970235}
+  - component: {fileID: 8856879957946703976}
   m_Layer: 5
   m_Name: GameManager
   m_TagString: Untagged
@@ -253,24 +271,6 @@ MonoBehaviour:
   raceCountdownTrigger: {fileID: 6934670203731004115}
   loseSceneName: LoseScene
   loseDisplayMessage: {fileID: 134547017375206124}
-  loadScenesAtStart: 0
-  scenesToLoadAtStart:
-  - LinksScene
-  - GameplayAlexandreDemey
-  - GameplayBlondiauNicolas
-  - GameplayBourbonHugo
-  - GameplayBruyPaul
-  - GameplayDiSciaccaJason
-  - GamePlayElsenXavier
-  - GameplayHaotCorentin
-  - GameplayLionelKakani
-  - GameplayLouiseJungers
-  - GameplayMartinoAntonio
-  - GameplayMathieuLoiseau
-  - GamePlayQuentinOlivier
-  - GameplayRiveraFernandezEgon
-  - DecorScene
-  gameIsReady: 0
   autoFindKarts: 1
   playerKart: {fileID: 0}
   finalTime: {fileID: 11400000, guid: ae675e31837e3ff40aee1f20e8a52953, type: 2}
@@ -427,16 +427,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6611290461825244
+--- !u!114 &8048913869959970235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836520582886223241}
+  m_GameObject: {fileID: 1315839542190839943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33249f47d511ca64cab4d2c2e54807bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f40b6af27f0f624f8bffb2d27106724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8856879957946703976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315839542190839943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea8365e15d071c46a93db8cb7a74f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &255321618
