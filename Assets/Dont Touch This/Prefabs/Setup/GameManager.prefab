@@ -451,6 +451,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea8365e15d071c46a93db8cb7a74f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RestartButtonName: Restart
+  StartSceneName: BuildStartScene
+--- !u!114 &7913651298099574843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445899085140116130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d578729d02d62274d981131764ecbc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &255321618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -867,6 +881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c5fd2f47a2514711843f1f96c7b2f0c, type: 3}
+--- !u!1 &4445899085140116130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5413294659218134590, guid: 2c5fd2f47a2514711843f1f96c7b2f0c, type: 3}
+  m_PrefabInstance: {fileID: 8551459821142250652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2154241724920093414 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7730855410354769530, guid: 2c5fd2f47a2514711843f1f96c7b2f0c, type: 3}
