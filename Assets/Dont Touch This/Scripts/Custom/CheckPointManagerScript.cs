@@ -25,7 +25,6 @@ public class CheckPointManagerScript : MonoBehaviour
     private void Start()
     {
         cameraManagerScript = CameraManagerScript.instance;
-        SwitchToCameraTPS();
     }
 
     void Update()
@@ -44,17 +43,35 @@ public class CheckPointManagerScript : MonoBehaviour
         KartClassicPlayer.transform.rotation = lastCheckPointQuat;
     }
 
-    public void SwitchToCameraFPS()
+    public void SwitchToCameraFPS(GameObject _avatar)
     {
         cameraManagerScript = CameraManagerScript.instance;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = 0;
+        
+        if(_avatar.GetComponent<CustomVariableScript>())
+        {
+            _avatar.GetComponent<CustomVariableScript>().TemplateCharacter.SetActive(false);
+        }
+        else
+        {
+            Debug.LogError("No TemplateCharacter detected on the avatar prefab !");
+        }
     }
 
-    public void SwitchToCameraTPS()
+    public void SwitchToCameraTPS(GameObject _avatar)
     {
         cameraManagerScript = CameraManagerScript.instance;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 3;
         cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = -6;
+
+        if (_avatar.GetComponent<CustomVariableScript>())
+        {
+            _avatar.GetComponent<CustomVariableScript>().TemplateCharacter.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("No TemplateCharacter detected on the avatar prefab !");
+        }
     }
 }

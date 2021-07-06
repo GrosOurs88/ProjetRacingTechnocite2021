@@ -363,6 +363,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4810912518991602691, guid: 19954de30401f73428254541a9ad156e, type: 3}
   m_PrefabInstance: {fileID: 681157281}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &540050570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4913185280523132313, guid: 19954de30401f73428254541a9ad156e, type: 3}
+  m_PrefabInstance: {fileID: 681157281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &591930846
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,18 +479,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4810912518991602692, guid: 19954de30401f73428254541a9ad156e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810912518991602692, guid: 19954de30401f73428254541a9ad156e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810912518991602692, guid: 19954de30401f73428254541a9ad156e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810912518991602692, guid: 19954de30401f73428254541a9ad156e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -497,16 +490,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4810912518991602694, guid: 19954de30401f73428254541a9ad156e, type: 3}
+      propertyPath: useController
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19954de30401f73428254541a9ad156e, type: 3}
 --- !u!4 &681157282 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4810912518991602692, guid: 19954de30401f73428254541a9ad156e, type: 3}
-  m_PrefabInstance: {fileID: 681157281}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &681157283 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4980245147109569286, guid: 19954de30401f73428254541a9ad156e, type: 3}
   m_PrefabInstance: {fileID: 681157281}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &684622233 stripped
@@ -793,7 +785,7 @@ PrefabInstance:
     - target: {fileID: 6691645748356329552, guid: 4366ba6a4d5213d4f9fc7bba3e778799, type: 3}
       propertyPath: m_LookAt
       value: 
-      objectReference: {fileID: 681157283}
+      objectReference: {fileID: 540050570}
     - target: {fileID: 6691645748356329553, guid: 4366ba6a4d5213d4f9fc7bba3e778799, type: 3}
       propertyPath: m_RootOrder
       value: 1
