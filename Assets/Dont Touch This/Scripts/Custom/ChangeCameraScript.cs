@@ -31,10 +31,10 @@ public class ChangeCameraScript : MonoBehaviour
                 switch (cameraType)
                 {
                     case CameraType.FPS:
-                        checkPointManagerScript.SwitchToCameraFPS();
+                        checkPointManagerScript.SwitchToCameraFPS(other.transform.parent.gameObject);
                         break;
                     case CameraType.TPS:
-                        checkPointManagerScript.SwitchToCameraTPS();
+                        checkPointManagerScript.SwitchToCameraTPS(other.transform.parent.gameObject);
                         break;
                 }
             }
