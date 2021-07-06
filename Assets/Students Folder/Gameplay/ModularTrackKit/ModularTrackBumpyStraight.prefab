@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2500533966758023335}
   - component: {fileID: 700493431632374158}
   - component: {fileID: 3498864366690743300}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: LaneDivider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7880951066277550297}
   - component: {fileID: 7880951066276452889}
   - component: {fileID: 7880951066280749689}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: ModularTrackBumpyStraight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

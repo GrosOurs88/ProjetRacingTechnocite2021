@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7841096914569119268}
   - component: {fileID: 7841096914570085604}
   - component: {fileID: 7841096914566001796}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: ModularTrackRamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 7841096914571986438}
   - component: {fileID: 7841096914569119270}
   - component: {fileID: 7841096914570085606}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: LaneDivider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
