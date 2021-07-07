@@ -628,10 +628,6 @@ PrefabInstance:
       propertyPath: playerKart
       value: 
       objectReference: {fileID: 1157484159}
-    - target: {fileID: 1315839542190839936, guid: b26c4a65cf4c6475a92bfd03c2c3282b, type: 3}
-      propertyPath: zoneToSpawn
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 1315839542190839937, guid: b26c4a65cf4c6475a92bfd03c2c3282b, type: 3}
       propertyPath: m_RootOrder
       value: 2
