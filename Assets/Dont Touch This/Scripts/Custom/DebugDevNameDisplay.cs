@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DebugDevNameDisplay : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TextMeshProUGUI devNameText;
+
+    public static DebugDevNameDisplay instance;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DisplayName(string _name)
     {
-        
-    }
+        devNameText.text = "Zone : " + _name;
+    }    
 }
