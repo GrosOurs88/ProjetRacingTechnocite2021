@@ -10,6 +10,9 @@ public class BuildStartManagerScript : MonoBehaviour
 
     private string thisSceneName;
 
+    private Scene actualScene;
+    private GameObject[] objectsList;
+
     void Start()
     {
         thisSceneName = SceneManager.GetActiveScene().name;
@@ -27,6 +30,20 @@ public class BuildStartManagerScript : MonoBehaviour
             while (!asyncLoadLevel.isDone)
             {
                 yield return null;
+            }
+        }
+
+        for (int i = 0; i < 13; i++)
+        {
+            actualScene = SceneManager.GetSceneByName(scenesToLoadAtStart[i]);
+            objectsList = actualScene.GetRootGameObjects();
+
+            foreach(GameObject gO in objectsList)
+            {
+                if(gO.GetComponent<PickupObject>())
+                {
+                    gO.GetComponent<PickupObject>().Registration();
+                }
             }
         }
 
