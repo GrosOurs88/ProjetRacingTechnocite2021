@@ -6,60 +6,60 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Dont Touch This/Scenes/BuildStartScene.unity
-    guid: 38a01c85d938a334b959a6825816e7dd
+    path: Assets/Dont Touch This/Scenes/BuildStartScene_Small.unity
+    guid: d78fe14ad9dd4294e885a972256a9455
   - enabled: 1
     path: Assets/Dont Touch This/Scenes/MainScene.unity
     guid: 92786e23da2af4a4f8803aaf44c47121
   - enabled: 1
-    path: Assets/Dont Touch This/Scenes/WinScene.unity
-    guid: d6801f2e59f75ee4b919cf5da4e48e3b
+    path: Assets/Dont Touch This/Scenes/WinScene_Small.unity
+    guid: 09e6b2312a0d3204d8d8def7446e7418
   - enabled: 1
-    path: Assets/Dont Touch This/Scenes/LoseScene.unity
-    guid: 9c449e01147824b419cda406398fb2e7
+    path: Assets/Dont Touch This/Scenes/LoseScene_Small.unity
+    guid: 5152bab09112c804885ae55fc9a87c6e
   - enabled: 1
-    path: Assets/Dont Touch This/Scenes/DecorScene.unity
-    guid: ac7652b2c5cefea4ebabeab4891af328
+    path: Assets/Dont Touch This/Scenes/DecorScene_Small.unity
+    guid: ba4da9138371ea143b3d8a908ee20a63
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayAlexandreDemey.unity
-    guid: 59b86d60c0917c34d8fbb8b3d0bff2e9
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayAlexandreDemey_Small.unity
+    guid: 3934127e4ec997d498ee4eb2aae9b79a
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayBlondiauNicolas.unity
-    guid: c9aa34f65e2559b49af9e06c635af67c
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayBlondiauNicolas_Small.unity
+    guid: edff4ca76b2ab7e408a7a318fa7c6aa6
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayBourbonHugo.unity
-    guid: 3f218c04ae278d84b928f7662245664e
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayBourbonHugo_Small.unity
+    guid: 477ac935594961b48b348dd576cdf916
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayBruyPaul.unity
-    guid: 03d48d7842654184f9a312aecc225323
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayBruyPaul_Small.unity
+    guid: 74578f08c4c8ff84abc2c38e2051aa70
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayDiSciaccaJason.unity
-    guid: c7e0cbad0e977b2409db4dc9d9e1f9fc
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayDiSciaccaJason_Small.unity
+    guid: 8a61ac518e697cd46a10236e1281a292
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GamePlayElsenXavier.unity
-    guid: fabc82b70d2659b4a98f5b422bb4b576
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GamePlayElsenXavier_Small.unity
+    guid: 369d5d6b99bcec94cb548e447fd0ffa7
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayHaotCorentin.unity
-    guid: 68b15e482bd258b4e93d0154cc32b01a
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayHaotCorentin_Small.unity
+    guid: 1d65cbc47631e714a8b73705189f16f0
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayLionelKakani.unity
-    guid: 528c9f97f2f21034bb0228cf743281cb
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayLionelKakani_Small.unity
+    guid: e6cf4e30049a45247b1eace4d954248e
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayLouiseJungers.unity
-    guid: 7426e29c519478d4daa71afa92d95671
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayLouiseJungers_Small.unity
+    guid: 136445e93f9184442b0b6a870dc70b63
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayMartinoAntonio.unity
-    guid: dbd2cc6506186af49954e94ad1c20083
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayMartinoAntonio_Small.unity
+    guid: 526bdb2526f046f46834251ad80e4d3f
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayMathieuLoiseau.unity
-    guid: 0d735842a50165f45bd5deea3595a738
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayMathieuLoiseau_Small.unity
+    guid: 6395704341651f1468b7d4f7333b5fce
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GamePlayQuentinOlivier.unity
-    guid: 40684c01d56f3c8488ddf7c85ea46cdc
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GamePlayQuentinOlivier_Small.unity
+    guid: fafe06d809ff4b546bc643add1cdde7d
   - enabled: 1
-    path: Assets/Students Folder/Scenes/GameplayRiveraFernandezEgon.unity
-    guid: 6c407f66953f13b498ebdd7ff1c218f1
+    path: Assets/Students Folder/Scenes/Gameplay_Small/GameplayRiveraFernandezEgon_Small.unity
+    guid: ae5766d09613633478ae239d92fde510
   - enabled: 1
-    path: Assets/Students Folder/Scenes/LinksScene.unity
-    guid: c12f83ffa9c005244b431c78efdc1bfa
+    path: Assets/Students Folder/Scenes/Gameplay_Small/LinksScene_Small.unity
+    guid: b9dd970c79ebaff40b54c7b917dce223
   m_configObjects: {}

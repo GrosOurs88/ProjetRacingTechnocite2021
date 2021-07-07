@@ -366,13 +366,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endSceneLoadDelay: 4
   endGameFadeCanvasGroup: {fileID: 6089522275397732777}
-  winSceneName: WinScene
+  winSceneName: WinScene_Small
   delayBeforeFadeToBlack: 4
   delayBeforeWinMessage: 1
   victorySound: {fileID: 8300000, guid: a533219934975884e81c1add37af9930, type: 3}
   winDisplayMessage: {fileID: 3755954870476285536}
   raceCountdownTrigger: {fileID: 6934670203731004115}
-  loseSceneName: LoseScene
+  loseSceneName: LoseScene_Small
   loseDisplayMessage: {fileID: 134547017375206124}
   autoFindKarts: 1
   playerKart: {fileID: 0}
@@ -449,7 +449,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.4
-  m_Pitch: 1
+  m_Pitch: 1.3
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1376,6 +1376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315839542190839937}
     m_Modifications:
+    - target: {fileID: 8696861206348029149, guid: ef6d1df31a060f54fa42c5cf3ef38207, type: 3}
+      propertyPath: m_Pitch
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8696861206348029150, guid: ef6d1df31a060f54fa42c5cf3ef38207, type: 3}
       propertyPath: m_RootOrder
       value: 5
