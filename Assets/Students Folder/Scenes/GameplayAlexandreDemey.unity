@@ -21805,6 +21805,10 @@ PrefabInstance:
       value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 8476714021091763329, guid: 6d9796d84c9e5a54fb4e014484945a46, type: 3}
+      propertyPath: cameraType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476714021091763329, guid: 6d9796d84c9e5a54fb4e014484945a46, type: 3}
       propertyPath: changeCamera
       value: 1
       objectReference: {fileID: 0}
