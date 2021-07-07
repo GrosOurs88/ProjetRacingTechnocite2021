@@ -48,6 +48,7 @@ public class CheckPointManagerScript : MonoBehaviour
         cameraManagerScript = CameraManagerScript.instance;
         //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1.5f;
         //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = 0;
+        cameraManagerScript.animator.ResetTrigger("TPS");
         cameraManagerScript.animator.SetTrigger("FPS");
 
 
@@ -73,6 +74,7 @@ public class CheckPointManagerScript : MonoBehaviour
         cameraManagerScript = CameraManagerScript.instance;
         //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 3;
         //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = -6;
+        cameraManagerScript.animator.ResetTrigger("FPS");
         cameraManagerScript.animator.SetTrigger("TPS");
 
         if (_avatar.GetComponent<CustomVariableScript>())
