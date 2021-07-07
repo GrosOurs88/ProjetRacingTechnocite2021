@@ -58856,10 +58856,8 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 1
-    b: 2
-  m_SelectedVertices: 0100000002000000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!1 &3025502057527593345
 GameObject:
   m_ObjectHideFlags: 0
@@ -64472,8 +64470,8 @@ MonoBehaviour:
   m_SharedTextures: []
   m_Positions:
   - {x: -93.15587, y: 0.00000073873065, z: 4.5962677}
-  - {x: 43.65645, y: -0.0000014978599, z: -31.571411}
-  - {x: -93.15587, y: -0.0000005441856, z: -31.571411}
+  - {x: 43.65645, y: -0.000002524347, z: -55.054703}
+  - {x: -93.15587, y: -0.0000015706729, z: -55.054703}
   - {x: 43.65645, y: -0.00000045336225, z: 4.5962677}
   m_Textures0:
   - {x: 0.2691228, y: 0.9477213}
@@ -64483,10 +64481,10 @@ MonoBehaviour:
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
-  - {x: 0, y: -0.00000003217533, z: -1, w: -1}
-  - {x: 0, y: -0.00000003217533, z: -1, w: -1}
-  - {x: 0, y: -0.000000035471345, z: -1, w: -1}
-  - {x: -2.9268074e-23, y: -0.000000028879311, z: -1, w: -1}
+  - {x: 0, y: -0.000000036716827, z: -1, w: -1}
+  - {x: 0, y: -0.000000036716827, z: -1, w: -1}
+  - {x: -2.8393392e-23, y: -0.000000038715275, z: -1, w: -1}
+  - {x: 0, y: -0.000000034718376, z: -1, w: -1}
   m_Colors: []
   m_UnwrapParameters:
     m_HardAngle: 88
@@ -64498,10 +64496,8 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 1
-    b: 2
-  m_SelectedVertices: 0100000002000000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!1 &7253652022059506506
 GameObject:
   m_ObjectHideFlags: 0
