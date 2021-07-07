@@ -51,6 +51,10 @@ public class GameFlowManager : MonoBehaviour
 
     public TimeInfos finalTime;
 
+    public enum SpawnInSpecificZone { Nothing, Zone1_Jason, Zone2_Alexandre, Zone3_Xavier, Zone4_Mathieu, Zone5_Louise, Zone6_Corentin, Zone7_Egon, Zone8_Antonio, Zone9_Paul, Zone10_Lionel, Zone11_Nicolas, Zone12_Quentin }
+    public GameObject zonesSpawnPointsList;
+    public SpawnInSpecificZone zoneToSpawn;
+    
     public static GameFlowManager instance;
 
     private void Awake()
@@ -69,6 +73,8 @@ public class GameFlowManager : MonoBehaviour
             }
             DebugUtility.HandleErrorIfNullFindObject<ArcadeKart, GameFlowManager>(playerKart, this);
         }
+
+        SpawnKartInSpecificZone();
 
         m_ObjectiveManager = FindObjectOfType<ObjectiveManager>();
         DebugUtility.HandleErrorIfNullFindObject<ObjectiveManager, GameFlowManager>(m_ObjectiveManager, this);
@@ -92,6 +98,57 @@ public class GameFlowManager : MonoBehaviour
         StartCoroutine(ShowObjectivesRoutine());
 
         StartCoroutine(CountdownThenStartRaceRoutine());
+    }
+
+    private void SpawnKartInSpecificZone()
+    {
+        switch (zoneToSpawn)
+        {
+            case SpawnInSpecificZone.Nothing:                
+                break;
+            case SpawnInSpecificZone.Zone1_Jason:
+                TeleportKartToPoint(0);
+                break;
+            case SpawnInSpecificZone.Zone2_Alexandre:
+                TeleportKartToPoint(1);
+                break;
+            case SpawnInSpecificZone.Zone3_Xavier:
+                TeleportKartToPoint(2);
+                break;
+            case SpawnInSpecificZone.Zone4_Mathieu:
+                TeleportKartToPoint(3);
+                break;
+            case SpawnInSpecificZone.Zone5_Louise:
+                TeleportKartToPoint(4);
+                break;
+            case SpawnInSpecificZone.Zone6_Corentin:
+                TeleportKartToPoint(5);
+                break;
+            case SpawnInSpecificZone.Zone7_Egon:
+                TeleportKartToPoint(6);
+                break;
+            case SpawnInSpecificZone.Zone8_Antonio:
+                TeleportKartToPoint(7);
+                break;
+            case SpawnInSpecificZone.Zone9_Paul:
+                TeleportKartToPoint(8);
+                break;
+            case SpawnInSpecificZone.Zone10_Lionel:
+                TeleportKartToPoint(9);
+                break;
+            case SpawnInSpecificZone.Zone11_Nicolas:
+                TeleportKartToPoint(10);
+                break;
+            case SpawnInSpecificZone.Zone12_Quentin:
+                TeleportKartToPoint(11);
+                break;
+        }
+    }
+
+    private void TeleportKartToPoint(int _i)
+    {
+        playerKart.transform.position = zonesSpawnPointsList.transform.GetChild(_i).transform.position;
+        playerKart.transform.rotation = zonesSpawnPointsList.transform.GetChild(_i).transform.rotation;
     }
 
     IEnumerator CountdownThenStartRaceRoutine() 
