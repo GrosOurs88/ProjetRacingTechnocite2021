@@ -48,4 +48,9 @@ public class PickupObject : TargetObject
             OnCollect();
         }
     }
+
+    public void Registration()
+    {
+        Register();
+    }
 }
