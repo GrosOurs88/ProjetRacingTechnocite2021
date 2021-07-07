@@ -46,10 +46,12 @@ public class CheckPointManagerScript : MonoBehaviour
     public void SwitchToCameraFPS(GameObject _avatar)
     {
         cameraManagerScript = CameraManagerScript.instance;
-        cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1.5f;
-        cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = 0;
-        
-        if(_avatar.GetComponent<CustomVariableScript>())
+        //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 1.5f;
+        //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = 0;
+        cameraManagerScript.animator.SetTrigger("FPS");
+
+
+        if (_avatar.GetComponent<CustomVariableScript>())
         {
             foreach (GameObject gO in _avatar.GetComponent<CustomVariableScript>().avatarAndKart)
             {
@@ -69,8 +71,9 @@ public class CheckPointManagerScript : MonoBehaviour
     public void SwitchToCameraTPS(GameObject _avatar)
     {
         cameraManagerScript = CameraManagerScript.instance;
-        cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 3;
-        cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = -6;
+        //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = 3;
+        //cameraManagerScript.transform.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.z = -6;
+        cameraManagerScript.animator.SetTrigger("TPS");
 
         if (_avatar.GetComponent<CustomVariableScript>())
         {
