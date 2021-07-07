@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMode: 0
-  TimeGained: 10
+  TimeGained: 15
   layerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -82,6 +82,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80a5140f1c335d42860132addf28f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeCamera: 0
+  cameraType: 0
 --- !u!1001 &5640275396183608143
 PrefabInstance:
   m_ObjectHideFlags: 0
