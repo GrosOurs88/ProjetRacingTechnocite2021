@@ -360,7 +360,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4811519131545644411, guid: 3a89675609d59b646a8d6fc4551f2e65, type: 3}
       propertyPath: m_Name
-      value: Mathieu_Louise
+      value: _Louise
       objectReference: {fileID: 0}
     - target: {fileID: 8162818656022347304, guid: 3a89675609d59b646a8d6fc4551f2e65, type: 3}
       propertyPath: m_RootOrder
@@ -759,7 +759,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1260118494077445593, guid: 23da6e5c87c5e4349b51114e8251062c, type: 3}
       propertyPath: m_Name
-      value: Nicolas_Quentin
+      value: xxx_yyy
       objectReference: {fileID: 0}
     - target: {fileID: 1805379790037292546, guid: 23da6e5c87c5e4349b51114e8251062c, type: 3}
       propertyPath: m_RootOrder
